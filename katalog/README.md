@@ -1,10 +1,10 @@
-# Live Demo Link 🚀
-[Home page 🏠](https://tugas2pbpirsyad.herokuapp.com/)
+# Live Demo Link 
+[Home page](https://tugas2pbpirsyad.herokuapp.com/)
 
-[Katalog page 📃](https://tugas2pbpirsyad.herokuapp.com/katalog/)
+[Katalog page](https://tugas2pbpirsyad.herokuapp.com/katalog/)
 
 ## Bagan request client
-![alt text](./assets/bagan.JPG "bagan request client")
+![alt text](./assets/bagan.jpg "bagan request client")
 
 ## Kenapa menggunakan virtual environtment?
 - Alasan penggunaan  environment mental karena secara langsung melaksanakan instalasi packages dan dependencies yang mana kedua hal tersebut dibutuhkan dalam framework django yang sebelumnya tidak terinstalasi secara global di local.  Hal yang dapat dilakukan sebatas mengakses dari folder/direktori yang telah terinstal apabila virtual environtment tidak digunakan. Pembuatan enviroment kerja python yang terisolasi dapat dibuat melalui virtual environment yang mana apabila banyak project yang dimiliki user, hal tersebut tidak akan mengganggu.
