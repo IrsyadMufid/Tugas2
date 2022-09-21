@@ -1,5 +1,4 @@
 ## My Watchlist  
-[Home page](https://tugas2pbpirsyad.herokuapp.com/)
 
 [HTML page](https://tugas2pbpirsyad.herokuapp.com/mywatchlist/html/)
 
