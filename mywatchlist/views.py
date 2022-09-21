@@ -1,3 +1,4 @@
+from email import message
 from django.shortcuts import render
 from mywatchlist.models import MyWatchlist
 from django.http import HttpResponse
@@ -7,9 +8,24 @@ from django.core import serializers
 # TODO: Create your views here.
 def show_mywatchlist(request):
     item_mywatchlist = MyWatchlist.objects.all()
+    not_watched = 0
+    watched = 0
+    message = ""
+    for film in item_mywatchlist:
+        if (film.watched):
+            watched += 1
+        else:
+            not_watched += 1
+    print(watched)
+    if(not_watched >= watched):
+        message =  "Wah, kamu masih sedikit menonton!"
+    else:
+        message = "Selamat, kamu sudah banyak menonton!"
     context = {
         'item_mywatchlist': item_mywatchlist,
         'nama' : 'Irsyad Mufid',
+        'message': message
+
     }
     return render(request, 'mywatchlist.html', context)
 
@@ -27,5 +43,7 @@ def show_html(request):
     context = {
         'item_mywatchlist': data,
         'nama' : 'Irsyad Mufid',
+        
+    
     }
     return render(request, 'mywatchlist.html', context)

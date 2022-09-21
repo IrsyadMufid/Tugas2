@@ -51,7 +51,7 @@
         "model":"mywatchlist.Mywatchlist",
         "pk":5,
         "fields":{
-            "watched":"Watched",
+            "watched":"Already Watched",
             "title":"Healthy Squad",
             "rating" : "4",
             "release_date" : "29 April",
@@ -75,7 +75,7 @@
         "model":"mywatchlist.Mywatchlist",
         "pk":7,
         "fields":{
-            "watched":"Watched",
+            "watched":"Already Watched",
             "title":"Man of Alumunium",
             "rating" : "4",
             "release_date" : "10 Juni 2009",
@@ -87,7 +87,7 @@
         "model":"mywatchlist.Mywatchlist",
         "pk":8,
         "fields":{
-            "watched":"Watched",
+            "watched":"Already Watched",
             "title":"Red Widow",
             "rating" : "2",
             "release_date" : "14 July 2020",
@@ -99,7 +99,7 @@
         "model":"mywatchlist.Mywatchlist",
         "pk":9,
         "fields":{
-            "watched":"Not Watchedd",
+            "watched":"Not Watched",
             "title":"Man - lkuh",
             "rating" : "1.5",
             "release_date" : "15 Agustus 2021",
@@ -111,7 +111,7 @@
         "model":"mywatchlist.Mywatchlist",
         "pk":10,
         "fields":{
-            "watched":"Watched",
+            "watched":"Already Watched",
             "title":"Dare Angel",
             "rating" : "4.75",
             "release_date" : "20 September 2018",
