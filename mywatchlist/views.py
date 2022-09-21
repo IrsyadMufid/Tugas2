@@ -40,9 +40,23 @@ def show_json(request):
 
 def show_html(request):
     data = MyWatchlist.objects.all()
+    not_watched = 0
+    watched = 0
+    message = ""
+    for film in data:
+        if (film.watched):
+            watched += 1
+        else:
+            not_watched += 1
+    print(watched)
+    if(not_watched >= watched):
+        message =  "Wah, kamu masih sedikit menonton!"
+    else:
+        message = "Selamat, kamu sudah banyak menonton!"
     context = {
         'item_mywatchlist': data,
         'nama' : 'Irsyad Mufid',
+        'message': message
         
     
     }
