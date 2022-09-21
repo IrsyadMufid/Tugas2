@@ -25,6 +25,12 @@
 6. Penambahan routing untuk html,json, dan xml sama seperti pada point 2. Hanya saja ada penamabahan kembali url di path urls di folder mywatchlist
 
 ## POSTMAN
-* ![alt text](./assets/postmanHTML.jpg "Postman HTML")
-* ![alt text](./assets/postmanXML.jpg "Postman XML")
-* ![alt text](./assets/postmanJSON.jpg "Postman JSON")
+
+## HTML
+![alt text](./assets/postmanHTML.jpg "Postman HTML")
+
+## XML
+![alt text](./assets/postmanXML.jpg "Postman XML")
+
+## JSON
+![alt text](./assets/postmanJSON.jpg "Postman JSON")
