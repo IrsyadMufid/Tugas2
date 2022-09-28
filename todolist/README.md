@@ -17,3 +17,7 @@
 4. Lakukan migrate model dengan field tersebut dengan melakukan py -m manage makemigrations lalu py -m manage migrate.
 5. Membuat class CreateForm dalam file baru yang bernama forms.py yang berfungsi untuk menampilkan form serta mensubmit data yang nantinya akan dipakai untuk  fungsi-fungsi yang akan dibuat dalam  views.py yang berguna untuk menampilkan todolist,login, logout, register dan hal lainnya. Fungsi-fungsi tersebut akan dihubungkan ke create_task.html, login.html, register.html, dan todolist.html
 - Tidak lupa untuk melakukan commit serta push menuju github agar dapat deploy ke dalam heroku dan membuat dummy sesuai perintah soal 
+
+## Akun Heroku
+- Username: pc1 ; password: heroku123456
+- Username: pc2 ; password: heroku123456
