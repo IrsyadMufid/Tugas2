@@ -1,4 +1,4 @@
-
+[Link Heroku](https://tugas2pbpirsyad.herokuapp.com/todolist/)
 
 ## Apa kegunaan {% csrf_token %} pada elemen <form>? Apa yang terjadi apabila tidak ada potongan kode tersebut pada elemen <form>?
 - Cross Site Request Forgery atau biasa disebut sebagai CSRF merupakan suatu kerentanan dalam situs yang memungkinkan terjadinya suatu exploit yang mana sebuah domain yang berbeda meminta request maupun perintah dengan mengatasnamakan pengguna yang terdaftar di situs target tersebut. Oleh karena itu diperlukan {% csrf_token %} untuk menangkal serangan CSRF yang dilakukan oleh penyerang. {% csrf_token %} akan menghasilkan token ketika rendering pada situs dilakukan serta menyaring request yang masuk pada situs tersebut. Pada kasus elemen <form>,  apabila {% csrf_token %} tidak disertai maka akan terjadi kerentanan dalam situs tersebut yang akan mengancam keamanan post request yang berguna untuk mengirim data dari user menuju server. 
