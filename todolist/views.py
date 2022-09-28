@@ -15,7 +15,7 @@ from .forms import CreateForm
 
 @login_required(login_url='/todolist/login/')
 def show_todolist(request):
-    todolist_item = Task.objects.all()
+    todolist_item = Task.objects.filter(user= request.user)
     context = {
     'list_item': todolist_item  ,
     'name': 'Irsyad Mufid',
@@ -58,8 +58,8 @@ def logout_user(request):
     response.delete_cookie('last_login')
     return response
 
-@login_required(login_url='/todolist/login/')
-def create_task(request): ####    
+
+def create_task(request):  
     context = {}
     if request.method == "POST":
         form = CreateForm(request.POST)
@@ -77,8 +77,8 @@ def create_task(request): ####
         }
     return render(request, "create-task.html", context)
 
-def task_toggle(request, pk):
-    task = Task.objects.get(pk=pk)
+def task_toggle(request, id):
+    task = Task.objects.get(id=id)
     if task.is_finished:
         task.is_finished = False
     else:
@@ -86,7 +86,7 @@ def task_toggle(request, pk):
     task.save()
     return redirect('todolist:show_todolist')
 
-def task_delete(request, pk):
-    task = Task.objects.get(pk=pk)
+def task_delete(request, id):
+    task = Task.objects.get(id=id)
     task.delete()
     return show_todolist(request)

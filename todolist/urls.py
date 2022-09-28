@@ -16,6 +16,6 @@ urlpatterns = [
     path('login/', login_user, name='login'), #sesuaikan dengan nama fungsi yang dibuat
     path('logout/', logout_user, name='logout'), #sesuaikan dengan nama fungsi yang dibuat
     path('create-task/', create_task, name='create_task'),
-    path('toggle-task/<int:pk>', task_toggle, name='toggle_task'),
-    path('delete-task/<int:pk>', task_delete, name='delete_task'),
+    path('toggle-task/<int:id>', task_toggle, name='toggle_task'),
+    path('delete-task/<int:id>', task_delete, name='delete_task'),
 ]
