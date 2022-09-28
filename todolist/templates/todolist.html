@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<style>
+h1, h5, p {text-align: center; color: rgb(255,253,253);}
+th {text-align: center;}
+tr {background-color: rgb(237,255,89);}
+div {text-align: center;}
+
+table, th, td {
+border: 1px solid rgb(255, 180, 89);
+table-layout: fixed;
+text-align: center;
+word-break: break-all
+}
+table {
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+}
+body {
+margin: 0;
+background-image: url('https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;
+}
+</style>
+
+<br>
+<h1>To-Do List</h1>
+
+<br>
+<h5>Masuk Sebagai: </h5>
+<p>{{ user.get_username }}</p>
+
+<div class="container">   
+<table>
+<tr>
+    <th>Date</th>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Status</th>
+    <th>Toggle</th>
+    <th>Remove Task</th>
+</tr>
+{% comment %} Add the data below this line {% endcomment %}
+{% for task in list_item %}
+<tr>
+    <th>{{ task.date }}</th>
+    <th>{{ task.title }}</th>
+    <th>{{ task.description }}</th>
+    
+    {% if task.is_finished %} 
+        <th>Selesai</th>
+        {% else %}
+        <th>Belum Selesai</th>
+        {% endif %}
+
+        <td><button><a href="{% url 'todolist:toggle_task' task.id %}">Check</a></button></td>
+        <td><button><a href="{% url 'todolist:delete_task' task.id %}">Delete</a></button></td>
+    </tr>
+{% endfor %}    
+</table>
+<br>
+
+<button><a href="{% url 'todolist:create_task' %}">Tambah Task Baru</a></button>
+<button><a href="{% url 'todolist:logout' %}">Logout</a></button>
+<br>
+<br>
+<h5>Sesi terakhir login: {{ last_login }}</h5>
+
+</div> 
+{% endblock content %}
