@@ -25,13 +25,13 @@
 ## README TUGAS 5
 ## Apa perbedaan dari Inline, Internal, dan External CSS? Apa saja kelebihan dan kekurangan dari masing-masing style?
     Internal : Ditulis di dalam tag <style> dan kode HTML dituliskan di bagian atas (header) file HTML. digunakan untuk Membuat tampilan pada satu halaman website dan tidak digunakan pada halaman website yang lain.
-    Cara ini akan sangat cocok dipakai untuk menciptakan halaman web dengan tampilan yang berbeda. Dengan kata lain, Internal CSS ini bisa dipakai untuk menciptakan tampilan yang unik, pada setiap halaman website.
+    Internal CSS ini bisa dipakai untuk menciptakan tampilan yang unik, pada setiap halaman website.
 
     External : Ditulis terpisah dengan kode HTML Eksternal CSS serta ditulis di sebuah file khusus yang berekstensi .css. Diletakkan setelah bagian <head> pada halaman.
-    Cara ini lebih sederhana dan simpel daripada menambahkan kode CSS di setiap elemen HTML yang ingin Anda atur tampilannya. 
+    Cara ini lebih sederhana dan simpel daripada menambahkan kode CSS di setiap elemen HTML yang ingin diatur tampilannya. 
 
-    Inline : Ditulis langsung pada atribut elemen HTML. Setiap elemen HTML memiliki atribut style, di situ lah inline CSS ditulis.
-    Cara ini kurang efisien karena setiap tag HTML yang diberikan harus memiliki style masing-masing. Anda akan lebih sulit dalam mengatur website jika hanya menggunakan inline style CSS. Sebab, Inline CSS digunakan hanya untuk mengubah satu elemen saja.
+    Inline : Ditulis langsung pada atribut elemen HTML. Setiap elemen HTML memiliki atribut style, Inline CSS ditulis.
+    Sulit dalam mengatur website jika hanya menggunakan inline style CSS karena Inline CSS digunakan hanya untuk mengubah satu elemen saja.
 
 ## Jelaskan tag HTML5 yang kamu ketahui
 	 
