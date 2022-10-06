@@ -21,3 +21,48 @@
 ## Akun Heroku
 - Username: pc1 ; password: heroku123456
 - Username: pc2 ; password: heroku123456
+
+## README TUGAS 5
+## Apa perbedaan dari Inline, Internal, dan External CSS? Apa saja kelebihan dan kekurangan dari masing-masing style?
+    Internal : Ditulis di dalam tag <style> dan kode HTML dituliskan di bagian atas (header) file HTML. Internal CSS dapat digunakan untuk membuat tampilan pada satu halaman website dan tidak digunakan pada halaman website yang lain.
+    Cara ini akan sangat cocok dipakai untuk menciptakan halaman web dengan tampilan yang berbeda. Dengan kata lain, Internal CSS ini bisa dipakai untuk menciptakan tampilan yang unik, pada setiap halaman website.
+
+    External : Ditulis terpisah dengan kode HTML Eksternal CSS ditulis di sebuah file khusus yang berekstensi .css. File eksternal CSS biasanya diletakkan setelah bagian <head> pada halaman.
+    Cara ini lebih sederhana dan simpel daripada menambahkan kode CSS di setiap elemen HTML yang ingin Anda atur tampilannya. 
+
+    Inline : Ditulis langsung pada atribut elemen HTML. Setiap elemen HTML memiliki atribut style, di situ lah inline CSS ditulis.
+    Cara ini kurang efisien karena setiap tag HTML yang diberikan harus memiliki style masing-masing. Anda akan lebih sulit dalam mengatur website jika hanya menggunakan inline style CSS. Sebab, Inline CSS digunakan hanya untuk mengubah satu elemen saja.
+
+## Jelaskan tag HTML5 yang kamu ketahui
+	 
+    <!DOCTYPE>	Menentukan tipe dokumen
+    <html>	Create sebuah dokumen HTML
+    <title>	Create judul dari sebuah halaman
+    <body>	Create body dari sebuah halaman
+    <h1> to <h6>	Create heading
+    <p>	Create paragraf
+    <br>	Insert satu baris putus
+    <hr>	Create perubahan dasar kata didalam isi
+    <!--...-->	komentar
+    <form>	Create form HTML untuk input pengguna
+    <input>	Create sebuah kontrol input
+    <textarea>	Create sebuah kontrol input multibaris (text area)
+
+
+
+## Tipe-Tipe CSS Selector
+    Universal Selector : Memilih semua elemen html. Syntax: *
+
+    Type Selector : Memilih semua elemen node namenya sesuai
+
+    Class Selector : Memilih semua elemen yang punya attribut class yang sesuai
+
+    ID Selector : Memilih sebuah elemen berdasarkan nilai attribut idnya
+
+    Attribut selector : Memilih semua elemen yang punya attribut
+
+## Implementasi checklist
+1. Menambahkan tag `<link>` pada base.html untuk menggunakan CDN dari bootstrap css
+2. Memasukan elemen-elem yang dibutuhkan ke dalam class container yang ada
+3. Peimplemntasian login dari https://mdbootstrap.com/docs/standard/extended/login/
+4. Pengakplikasian todolist dari https://getbootstrap.com/docs/4.0/components/card/

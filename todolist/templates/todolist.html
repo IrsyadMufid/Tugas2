@@ -95,6 +95,10 @@ background-size: 100% 100%;
             </li>
           </ul>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: #fafafa" href="{% url 'todolist:create_task' %}">Tambah Task</a>
+        </li>
+        
         <span class="navbar-text"
           style="color: #fafafa">
           {{ user.get_username }}
@@ -107,6 +111,30 @@ background-size: 100% 100%;
   </div>
   <!-- Container wrapper -->
 </nav>
+
+<div class="container">
+<div class="card " style="width: 18rem;">
+  {% for task in list_item %}
+  <h5 class="card-header d-flex justify-content-between align-items-center">
+    Task : {{task.title}}
+    </h5>
+  <div class="card-body">
+    
+    <h5 class="card-title">Date : {{task.date}}</h5>
+                <h5 class="card-title">Description : {{task.description}}</h5>
+                <h5 class="card-title">
+                  Status : 
+                  {% if task.is_finished %}
+                  Finished
+                  {% else %}
+                  Not Yet
+                  {% endif %}
+                </h5>
+                
+  </div>
+  {% endfor %} 
+</div>
+</div>
 
 <div class="m-5 d-flex flex-column justify-content-center align-items-center">
 <!-- <h1>To-Do List</h1> -->
@@ -123,7 +151,7 @@ background-size: 100% 100%;
             <div class="col-12">
               <div class="table-responsive card">
                   <div class="bg-image h-100" style="background-color: #ffb97f;">
-                    <table class="table table-striped mb-0">
+                    <table class="table table-hover table-striped mb-0">
                     <thead style="background-color: #fd7601;">
                     <tr class="text-uppercase text-success">
                     <tr>
@@ -169,13 +197,17 @@ background-size: 100% 100%;
     </div>
     </div>
     </div>
-</section>
-<button type="button" class="btn btn-warning btn-rounded">
-  <a href="{% url 'todolist:create_task' %}">Tambah Task Baru
-</button>
+<div class="m-5 d-flex flex-column justify-content-center align-items-center">
+  <div>
   <p class="h5"
-  style="color: #fafafa">Sesi terakhir login: {{ last_login }}</p>
+    style="color: #fafafa">
+    Sesi terakhir login: {{ last_login }}</p>
+  </div>
+  </div>
+</section>
+
 </div>
+
 </div>
-</div>
+
 {% endblock content %}
