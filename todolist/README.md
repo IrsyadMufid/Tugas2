@@ -62,7 +62,31 @@
     Attribut selector : Memilih semua elemen yang punya attribut
 
 ## Implementasi checklist
-1. Menambahkan tag `<link>` pada base.html untuk menggunakan CDN dari bootstrap css
+1. Menambahkan tag `<link>` pada  setiap html yang membutuhkan untuk menggunakan CDN dari bootstrap css
 2. Memasukan elemen-elem yang dibutuhkan ke dalam class container yang ada
 3. Peimplemntasian login dari https://mdbootstrap.com/docs/standard/extended/login/
 4. Pengakplikasian todolist dari https://getbootstrap.com/docs/4.0/components/card/
+
+## README Tugas 6
+
+## Perbedaan antara asynchronous programming dengan synchronous programming.
+- Synchronus: click, wait, refresh. Jadi saat user click atau mengirim request, user harus menunggu server menampilkan semuanya dulu, baru bisa berinteraksi lagi. Contoh: saat kita klik ketik sesuatu di kolom pencarian google dan enter, kita harus menunggu google menampilkan semua informasi yang ada, baru bisa berinteraksi lagi
+- Asynchronus: user bisa terus berinteraksi saat nunggu respons dari server, jadi tidak nunggu halamannya selesai. Contoh: chat dan email. Biasanya terjadi di belakang layar.
+
+## Paradigma Event-Driven Programming
+- Merupakan paradigma dimana event menentukan sebuah alur program yang bisa terdiri atas tindakan pengguna, luaran dari sebuah tindakan maupun pesan dari progam lainnya serta lainnya. Seperti contoh pada modal, ketika menekan tambah task akan memunculkan modal yang bersangkutan untuk mengisi judul serta deskripsi yang diinginkan. Setekah mengisi, user menekan tombol submit, maka objek Task baru akan terbentuk yang nanti akan dimasukkan ke database dan ditampilkan pada halaman todolist 
+
+## Penerapan asynchronous programming pada AJAX
+- User tidak perlu reload secara menyeluruh pada web dikarenakan pembaharuan dilakukan saat submit form yang ada di modal yang mana AJAX digunakan untuk pemberian informasi dari serta menuju server serta asynchronous programming menyebabkan halaman terus diproses dan penanganan reply mungkin dilakukan.
+
+## Pengimplemntasian checklist
+1. Penambahan tag script pada todolist_ajax untuk menggunakan JavaScript untuk jquery dan bootstrap
+2. Pembuatan fungsi loadData untuk menghapus card serta table yang ada pada elemen div dengan id task_card dan table_Card. Selanjutnya menggunakan method AJAX GET untuk mengambil data dari objek task yang sudah dirender menjadi json. Setelah itu, membuat card serta table untuk masing-masing objek dan menambahkannya ke dalam div dengan id task_card serta table_card
+3. Pembuatan fungsi $(document).ready() untuk melakukan fungsi loadData pada todolist ketika pertamakalidibuka
+4. Pembuatan fungsi $(document).on() untuk menghandle submisi form pada modal
+5. Pembuatan tombol tambah task pada navbar dengan id yang ada pada modal
+6. Menghapus for loop pada task dan menggantinya dengan class serta id pada loadData
+7. Pembuatan modal yang berisi judul serta deskripsi serta sumbit untuk mengsubmit form
+8. Membuat fungsi show_json untk mengambilkan data dalam bentuk json
+9. Membuat fungsi add_todolist_ajax untuk menerima request POST dari web dalam bentuk objek dan menambahkan path ajax/submit dalam url.py
+10. Membuat fungsi show_totolist_ajax untuk menampilakan data dalam todolist_ajax.html sehingga dapat berpindah dari todolist.html ke todolist_ajax.html mauapun sebaliknya serta menambhakan url ajax/ pada url.py
