@@ -52,8 +52,8 @@ background-size: 100% 100%;
             url: "{% url 'todolist:show_json' %}",
             type: "GET",
             dataType: "json",
-            success: function(resp){
-                for (let i of resp){
+            success: function(data){
+                for (let i of data){
                     let status = i.fields.status ? "Selesai" : "Belum Selesai";
                     data_card +=`
                    
@@ -75,7 +75,7 @@ background-size: 100% 100%;
                 $('.task_card').append(data_card);
                 
             },
-            error: function(resp){
+            error: function(data){
                 console.log('Error?');
             }
         })
@@ -83,8 +83,8 @@ background-size: 100% 100%;
             url: "{% url 'todolist:show_json' %}",
             type: "GET",
             dataType: "json",
-            success: function(resp){
-              for (let i of resp){
+            success: function(data){
+              for (let i of data){
                     let status = i.fields.is_finished? "Selesai" : "Belum Selesai";
                     table_card +=`
                     <tr id="${i.id}" >
@@ -95,12 +95,12 @@ background-size: 100% 100%;
                             <td>
                             
                             <button type="button" class="btn btn-warning btn-rounded"
-                            <a href="todolist/toggle-task/${i.pk}"> Toggle
+                            <a href="todolist/toggle-task/${i.id}"> Toggle
                             </button>
                           </td>
                             <td>
                               <button type="button" class="btn btn-warning btn-rounded"
-                              onclick="deleteTask(${i.pk})"> Delete
+                              onclick="deleteTask(${i.id})"> Delete
                               </button>
                             </td>
                         </tr>  
@@ -110,7 +110,7 @@ background-size: 100% 100%;
                           }
               $('.table_card').append(table_card);
             },
-            error: function(resp){
+            error: function(data){
                 console.log('Error?');
             }
         })
@@ -141,13 +141,11 @@ background-size: 100% 100%;
         });
     });
     function deleteTask(val){
-        console.log(123);
+        console.log();
         $.ajax({
-            type :"DELETE",
-            csrfmiddlewaretoken: "{{ csrf_token }}",
             url :`/todolist/delete-task/${id}`,
             success: function () {
-                console.log(12333);
+                console.log();
                 $(`#${id}`).remove()
             },
         })
