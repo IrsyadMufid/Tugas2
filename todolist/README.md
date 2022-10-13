@@ -70,9 +70,9 @@
 ## README Tugas 6
 
 ## Perbedaan antara asynchronous programming dengan synchronous programming.
-- Synchronus: click, wait, refresh. Jadi saat user click atau mengirim request, user harus menunggu server menampilkan semuanya dulu, baru bisa berinteraksi lagi. Contoh: saat kita klik ketik sesuatu di kolom pencarian google dan enter, kita harus menunggu google menampilkan semua informasi yang ada, baru bisa berinteraksi lagi
-- Asynchronus: user bisa terus berinteraksi saat nunggu respons dari server, jadi tidak nunggu halamannya selesai. Contoh: chat dan email. Biasanya terjadi di belakang layar.
-
+- Synchronus: click, wait, refresh. Ketika ada event atau request dari user ke server,user akan menunggu dari server untuk memunculkan yang ada di request tersebut, baru bisa berinteraksi lagi. Contoh: saat kita klik ketik sesuatu di kolom pencarian google dan enter, kita harus menunggu google menampilkan semua informasi yang ada, baru bisa berinteraksi lagi
+- Asynchronus:  Menggunakan ajax asynchronous, javascript maupun xml. Terdapat partial page pada bagian yang hanya diminta, sehingga tidak menjalankan keseluruhan dari halaman. Dapat berinteraksi ketika saat loding dan download sehinnga user dapat berinteraksi tanpa harus menunggu page merefresh secarakeseluruhan user bisa terus berinteraksi saat nunggu respons dari server, jadi tidak nunggu halamannya selesai. Contoh: chat dan email. Biasanya terjadi di belakang layar.
+- synchronous menjalankan beberapa proses dijalankan secara bersamaan dalam satu waktu sehingga menyebabkan output tidak berurutan, sedangkan asynchronous hanya bisa 1 proses dalam 1 waktu
 ## Paradigma Event-Driven Programming
 - Merupakan paradigma dimana event menentukan sebuah alur program yang bisa terdiri atas tindakan pengguna, luaran dari sebuah tindakan maupun pesan dari progam lainnya serta lainnya. Seperti contoh pada modal, ketika menekan tambah task akan memunculkan modal yang bersangkutan untuk mengisi judul serta deskripsi yang diinginkan. Setekah mengisi, user menekan tombol submit, maka objek Task baru akan terbentuk yang nanti akan dimasukkan ke database dan ditampilkan pada halaman todolist 
 
