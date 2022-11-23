@@ -2,8 +2,10 @@ from email import message
 from django.shortcuts import render
 from mywatchlist.models import MyWatchlist
 from django.http import HttpResponse
+from django.http import JsonResponse
 from django.core import serializers
 import datetime
+
 
 
 # TODO: Create your views here.
