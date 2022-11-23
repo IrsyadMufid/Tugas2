@@ -7,8 +7,8 @@
         "fields":{
             "watched": true,
             "title":" Pria Besi",
-            "rating" : "3.75",
-            "release_date" : "26 Desember 2004",
+            "rating" : 3,
+            "release_date" : "2022-05-06",
             "review" : "Cinematic yang bagus !"
         }
 },
@@ -18,8 +18,8 @@
         "fields":{
             "watched":false,
             "title":"Captain Indonesia",
-            "rating" : "4",
-            "release_date" : "31 Januari 2010",
+            "rating" : 4,
+            "release_date" : "2022-12-17",
             "review" : "Alur cerita yang menarik"
         }
 },
@@ -29,8 +29,8 @@
         "fields":{
             "watched": true,
             "title":"White Knight Rises",
-            "rating" : "4.5",
-            "release_date" : "24 Februari 2015",
+            "rating" : 5,
+            "release_date" : "2019-04-25",
             "review" : "Pendalaman karakter yang baik oleh para aktor"
     }
 },
@@ -41,8 +41,8 @@
         "fields":{
             "watched":false,
             "title":"Doctor Normal",
-            "rating" : "3.5",
-            "release_date" : "28 Maret 2016",
+            "rating" : 3,
+            "release_date" : "2021-08-13",
             "review" : "Cukup baik, hanya pendalaman karater oleh aktor kurang"
         }
 },
@@ -51,10 +51,10 @@
         "model":"mywatchlist.Mywatchlist",
         "pk":5,
         "fields":{
-            "watched":true,
+            "watched": true,
             "title":"Healthy Squad",
-            "rating" : "4",
-            "release_date" : "29 April",
+            "rating" : 4,
+            "release_date" : "2023-08-4",
             "review" : "Alur cerita yang menarik dikarenakan dilihat dari sudut pandang penjahat"
         }
 },
@@ -65,8 +65,8 @@
         "fields":{
             "watched":false,
             "title":"Peaky Nose",
-            "rating" : "4",
-            "release_date" : "27 Mei 2017",
+            "rating" : 4,
+            "release_date" : "2021-08-13",
             "review" : "Pendalaman karakter, Alur yang jarang ditemui dan cinematic yang bagus"
         }
 },
@@ -77,8 +77,8 @@
         "fields":{
             "watched":true,
             "title":"Man of Alumunium",
-            "rating" : "4",
-            "release_date" : "10 Juni 2009",
+            "rating" : 4,
+            "release_date" : "2022-05-27",
             "review" : "Alur yang sesuai dengan comicnya serta akting aktor yang mumpuni"
         }
 },
@@ -89,8 +89,8 @@
         "fields":{
             "watched":true,
             "title":"Red Widow",
-            "rating" : "2",
-            "release_date" : "14 July 2020",
+            "rating" : 2,
+            "release_date" : "2022-05-05",
             "review" : "CGI yang buruk untuk sekelas film Mervil"
         }
 },
@@ -101,8 +101,8 @@
         "fields":{
             "watched":false,
             "title":"Man - lkuh",
-            "rating" : "1.5",
-            "release_date" : "15 Agustus 2021",
+            "rating" : 1,
+            "release_date" : "2022-03-30",
             "review" : "Pendalaman karakter yang buruk, comicnya jauh lebih baik pada "
         }
 },
@@ -113,8 +113,8 @@
         "fields":{
             "watched":true,
             "title":"Dare Angel",
-            "rating" : "4.75",
-            "release_date" : "20 September 2018",
+            "rating" : 5,
+            "release_date" : "2022-03-02",
             "review" : "Satu-satunya film series superhero pada Mervil yang masih mempertahankan esensi karakternya"
         }
 }
