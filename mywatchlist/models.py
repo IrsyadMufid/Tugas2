@@ -1,9 +1,12 @@
 from django.db import models
+from django.core.validators import MaxValueValidator, MinValueValidator
 
 
 class MyWatchlist(models.Model):
-    watched = models.CharField(max_length=50)
+    watched = models.BooleanField(default=False)
     title = models.CharField(max_length=50)
-    rating = models.FloatField()
-    release_date = models.TextField()
+    rating = models.IntegerField(
+        validators=[MaxValueValidator(5), MinValueValidator(1)]
+    )
+    release_date = models.DateField()
     review = models.TextField()

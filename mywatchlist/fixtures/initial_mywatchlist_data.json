@@ -5,7 +5,7 @@
         "model":"mywatchlist.Mywatchlist",
         "pk":1,
         "fields":{
-            "watched":"Already Watched",
+            "watched": true,
             "title":" Pria Besi",
             "rating" : "3.75",
             "release_date" : "26 Desember 2004",
@@ -16,7 +16,7 @@
         "model":"mywatchlist.Mywatchlist",
         "pk":2,
         "fields":{
-            "watched":"Not Watched",
+            "watched":false,
             "title":"Captain Indonesia",
             "rating" : "4",
             "release_date" : "31 Januari 2010",
@@ -27,7 +27,7 @@
         "model":"mywatchlist.Mywatchlist",
         "pk":3,
         "fields":{
-            "watched":"Already Watched",
+            "watched": true,
             "title":"White Knight Rises",
             "rating" : "4.5",
             "release_date" : "24 Februari 2015",
@@ -39,7 +39,7 @@
         "model":"mywatchlist.Mywatchlist",
         "pk":4,
         "fields":{
-            "watched":"Not Watched",
+            "watched":false,
             "title":"Doctor Normal",
             "rating" : "3.5",
             "release_date" : "28 Maret 2016",
@@ -51,7 +51,7 @@
         "model":"mywatchlist.Mywatchlist",
         "pk":5,
         "fields":{
-            "watched":"Already Watched",
+            "watched":true,
             "title":"Healthy Squad",
             "rating" : "4",
             "release_date" : "29 April",
@@ -63,7 +63,7 @@
         "model":"mywatchlist.Mywatchlist",
         "pk":6,
         "fields":{
-            "watched":"Not Watched",
+            "watched":false,
             "title":"Peaky Nose",
             "rating" : "4",
             "release_date" : "27 Mei 2017",
@@ -75,7 +75,7 @@
         "model":"mywatchlist.Mywatchlist",
         "pk":7,
         "fields":{
-            "watched":"Already Watched",
+            "watched":true,
             "title":"Man of Alumunium",
             "rating" : "4",
             "release_date" : "10 Juni 2009",
@@ -87,7 +87,7 @@
         "model":"mywatchlist.Mywatchlist",
         "pk":8,
         "fields":{
-            "watched":"Already Watched",
+            "watched":true,
             "title":"Red Widow",
             "rating" : "2",
             "release_date" : "14 July 2020",
@@ -99,7 +99,7 @@
         "model":"mywatchlist.Mywatchlist",
         "pk":9,
         "fields":{
-            "watched":"Not Watched",
+            "watched":false,
             "title":"Man - lkuh",
             "rating" : "1.5",
             "release_date" : "15 Agustus 2021",
@@ -111,7 +111,7 @@
         "model":"mywatchlist.Mywatchlist",
         "pk":10,
         "fields":{
-            "watched":"Already Watched",
+            "watched":true,
             "title":"Dare Angel",
             "rating" : "4.75",
             "release_date" : "20 September 2018",
