@@ -2,7 +2,7 @@
 
 [
     {
-        "model":"mywatchlist.Mywatchlist",
+        "model":"mywatchlist.mywatchlist",
         "pk":1,
         "fields":{
             "watched": true,
@@ -13,7 +13,7 @@
         }
 },
 {
-        "model":"mywatchlist.Mywatchlist",
+        "model":"mywatchlist.mywatchlist",
         "pk":2,
         "fields":{
             "watched":false,
@@ -24,7 +24,7 @@
         }
 },
 {
-        "model":"mywatchlist.Mywatchlist",
+        "model":"mywatchlist.mywatchlist",
         "pk":3,
         "fields":{
             "watched": true,
@@ -36,7 +36,7 @@
 },
 
 {
-        "model":"mywatchlist.Mywatchlist",
+        "model":"mywatchlist.mywatchlist",
         "pk":4,
         "fields":{
             "watched":false,
@@ -48,7 +48,7 @@
 },
 
 {
-        "model":"mywatchlist.Mywatchlist",
+        "model":"mywatchlist.mywatchlist",
         "pk":5,
         "fields":{
             "watched": true,
@@ -60,7 +60,7 @@
 },
 
 {
-        "model":"mywatchlist.Mywatchlist",
+        "model":"mywatchlist.mywatchlist",
         "pk":6,
         "fields":{
             "watched":false,
@@ -72,7 +72,7 @@
 },
 
 {
-        "model":"mywatchlist.Mywatchlist",
+        "model":"mywatchlist.mywatchlist",
         "pk":7,
         "fields":{
             "watched":true,
@@ -84,7 +84,7 @@
 },
 
 {
-        "model":"mywatchlist.Mywatchlist",
+        "model":"mywatchlist.mywatchlist",
         "pk":8,
         "fields":{
             "watched":true,
@@ -96,7 +96,7 @@
 },
 
 {
-        "model":"mywatchlist.Mywatchlist",
+        "model":"mywatchlist.mywatchlist",
         "pk":9,
         "fields":{
             "watched":false,
@@ -108,7 +108,7 @@
 },
 
 {
-        "model":"mywatchlist.Mywatchlist",
+        "model":"mywatchlist.mywatchlist",
         "pk":10,
         "fields":{
             "watched":true,
