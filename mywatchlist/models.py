@@ -10,5 +10,7 @@ class MyWatchlist(models.Model):
     rating = models.IntegerField(
         validators=[MaxValueValidator(5), MinValueValidator(1)]
     )
-    release_date = models.DateField()
+    release_date = models.DateField(null=True, blank=True)
     review = models.TextField()
+
+
