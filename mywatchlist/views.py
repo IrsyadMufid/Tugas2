@@ -1,34 +1,28 @@
-from email import message
 from django.shortcuts import render
 from mywatchlist.models import MyWatchlist
 from django.http import HttpResponse
-from django.http import JsonResponse
 from django.core import serializers
-import datetime
-
 
 
 # TODO: Create your views here.
 def show_mywatchlist(request):
     item_mywatchlist = MyWatchlist.objects.all()
-    not_watched = 0
-    watched = 0
-    message = ""
+    belum_tonton = 0
+    watched = 0 
+    pesan = ""
     for film in item_mywatchlist:
-        if (film.watched):
+        if (film.watched ):
             watched += 1
         else:
-            not_watched += 1
-    print(watched)
-    if(not_watched >= watched):
-        message =  "Wah, kamu masih sedikit menonton!"
+            belum_tonton += 1
+    if (watched >= belum_tonton):
+        pesan = "Selamat, kamu sudah banyak menonton!"
     else:
-        message = "Selamat, kamu sudah banyak menonton!"
+        pesan = "Wah, kamu masih sedikit menonton!"
     context = {
         'item_mywatchlist': item_mywatchlist,
-        'nama' : 'Irsyad Mufid',
-        'message': message
-
+        'nama' : 'Rifqi',
+        "pesan" : pesan,
     }
     return render(request, 'mywatchlist.html', context)
 
@@ -42,25 +36,22 @@ def show_json(request):
     return HttpResponse(serializers.serialize("json", data), content_type="application/json")
 
 def show_html(request):
-    data = MyWatchlist.objects.all()
-    not_watched = 0
-    watched = 0
-    message = ""
-    for film in data:
+    item_mywatchlist = MyWatchlist.objects.all()
+    belum_tonton = 0
+    watched = 0 
+    pesan = ""
+    for film in item_mywatchlist:
         if (film.watched):
             watched += 1
         else:
-            not_watched += 1
-    print(watched)
-    if(not_watched >= watched):
-        message =  "Wah, kamu masih sedikit menonton!"
+            belum_tonton += 1
+    if (watched >= belum_tonton):
+        pesan = "Selamat, kamu sudah banyak menonton!"
     else:
-        message = "Selamat, kamu sudah banyak menonton!"
+        pesan = "Wah, kamu masih sedikit menonton!"
     context = {
-        'item_mywatchlist': data,
-        'nama' : 'Irsyad Mufid',
-        'message': message
-        
-    
+        'item_mywatchlist': item_mywatchlist,
+        'nama' : 'Rifqi',
+        "pesan" : pesan,
     }
     return render(request, 'mywatchlist.html', context)
